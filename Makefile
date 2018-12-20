@@ -8,7 +8,7 @@ clean32:
 clean64:
 	rm hello64.obj hello64.exe
 
-hello64.exe:
+hello64.exe: hello64.obj
 	x86_64-w64-mingw32-ld hello64.obj -l kernel32 -o hello64.exe
 
 hello64.obj:
